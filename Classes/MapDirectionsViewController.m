@@ -27,10 +27,11 @@
 }
 
 - (void)loadView {
-	UIView *contentView = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 320.0f, 372.0f)];
+    const float h = [UIScreen mainScreen].bounds.size.height;
+    UIView *contentView = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 320.0f, h)];
 	self.view = contentView;
 	[contentView release];
-	
+
 	routeMapView = [[MKMapView alloc] initWithFrame:contentView.frame];
 	routeMapView.delegate = self;
 	routeMapView.showsUserLocation = YES;
