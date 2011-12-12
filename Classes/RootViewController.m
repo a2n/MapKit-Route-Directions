@@ -241,7 +241,7 @@
 		MapDirectionsViewController *controller = [[MapDirectionsViewController alloc] init];
 		
 		controller.startPoint = startField.text;
-		controller.endPoint = endField.text;
+		controller.endPoint = endField.text;        
 		NSMutableArray *wayPoints = [NSMutableArray arrayWithCapacity:[wayPointFields count]];
 		for (UITextField *pointField in wayPointFields) {
             if ([pointField.text length] > 0) {

@@ -24,7 +24,6 @@
 	self = [super init];
 	if (self != nil) {
 		dictionaryRepresentation = [dictionary retain];
-        
         if (!vertices || (NSNull *)vertices == [NSNull null]) {
             vertices = [[dictionaryRepresentation objectForKey:@"k"] retain];
         }
